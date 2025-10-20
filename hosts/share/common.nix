@@ -1,7 +1,6 @@
 {
   lib,
   pkgs,
-  config,
   ...
 }:
 {
@@ -9,16 +8,9 @@
     ./locale.nix
   ];
 
-  sops.secrets.nix-conf = {
-    sopsFile = ../../sops/secrets/nix-conf;
-    format = "binary";
-    mode = "0444";
-  };
-
   xfaf.bootconfig.enable = true;
   xfaf.nixconfig = {
     enable = true;
-    extraNixConfFile = config.sops.secrets.nix-conf.path;
   };
 
   xfaf.sudo.enable = true;

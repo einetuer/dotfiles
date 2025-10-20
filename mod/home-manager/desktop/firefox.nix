@@ -18,8 +18,6 @@
   config =
     let
       opts = config.xfaf.desktop.apps.firefox;
-
-      wallpaperId = "8f36fecd-20bc-481d-ba3c-f93e8cfd7af0";
     in
     lib.mkIf opts.enable {
       stylix.targets.firefox.enable = false;
@@ -27,13 +25,7 @@
       xfaf.desktop.browserCommand = lib.mkIf opts.makeDefault "firefox";
 
       home.sessionVariables.BROWSER = lib.mkIf opts.makeDefault "firefox";
-
-      home.file.".mozilla/firefox/main/wallpaper/${wallpaperId}".source = pkgs.fetchurl {
-        name = "firefox-wallpaper";
-        url = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.redd.it%2Fjust-fox-at-night-v0-dfj29nz1qjja1.png%3Fs%3D513b5084803e00400cd7c0b26b21fc347e05b0b7&f=1&nofb=1&ipt=7dee3dc2dae0e8f80ca37617cead5802581c71d842e3340f50ee7589ab49327a";
-        sha256 = "sha256-IhLRz/G1wC5QAABBgPrBda7S2+t8evFtgGrUQIZvaiI=";
-      };
-
+        
       xdg.mimeApps = {
         enable = true;
 
@@ -283,9 +275,7 @@
 
             "browser.newtabpage.activity-stream.feeds.topsites" = false;
               
-            "browser.newtabpage.activity-stream.newtabWallpapers.customWallpaper.uuid" = wallpaperId;
-            "browser.newtabpage.activity-stream.newtabWallpapers.customWallpaper.uploadedPreviously" = true;
-            "browser.newtabpage.activity-stream.newtabWallpapers.wallpaper" = "custom";
+            "browser.newtabpage.activity-stream.newtabWallpapers.wallpaper" = "dark-panda";
           };
         };
 
