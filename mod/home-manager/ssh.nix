@@ -14,23 +14,20 @@
       package = pkgs.openssh;
       enableDefaultConfig = false;
 
-      matchBlocks =
-        let
-        in
-        {
-          teefax = "teefax.hhu-fscs.de";
-          verleihnix = "verleihnix.hhu-fscs.de";
-          sebigbos = "sebigbos.hhu-fscs.de";
+      matchBlocks = {
+        teefax.hostname = "teefax.hhu-fscs.de";
+        verleihnix.hostname = "verleihnix.hhu-fscs.de";
+        sebigbos.hostname = "sebigbos.hhu-fscs.de";
 
-          vps = {
-            hostname = "0x5a4.de";
-            forwardAgent = true;
-          };
-
-          "*" = {
-            addKeysToAgent = "yes";
-          };
+        vps = {
+          hostname = "0x5a4.de";
+          forwardAgent = true;
         };
+
+        "*" = {
+          addKeysToAgent = "yes";
+        };
+      };
     };
   };
 }
