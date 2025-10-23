@@ -10,6 +10,8 @@
   config = lib.mkIf config.xfaf.shell.fish.enable {
     programs.fzf.enable = true;
 
+    stylix.targets.fish.enable = false;
+
     home.packages =
       with pkgs.fishPlugins;
       [

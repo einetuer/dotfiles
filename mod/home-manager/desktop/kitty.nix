@@ -15,14 +15,6 @@
     let
       opts = config.xfaf.desktop.apps.kitty;
 
-      tinted-theme = config.lib.stylix.colors {
-        templateRepo = config.stylix.inputs.tinted-kitty;
-        target = "base16";
-      };
-
-      theme = pkgs.runCommandLocal "kitty-theme.conf" { } ''
-        sed -e '0,/^# normal/I!d' ${tinted-theme} > $out
-      '';
     in
     lib.mkIf opts.enable {
       xfaf.desktop.terminalCommand = lib.mkIf opts.makeDefault "kitty -1 ${lib.optionalString opts.openTmux "-e tmux"}";
@@ -50,6 +42,7 @@
         };
 
         settings = {
+          background = "#" + config.lib.stylix.colors.base00;
           background_opacity = "${builtins.toString config.stylix.opacity.terminal}";
 
           update_check_interval = 0;
@@ -63,8 +56,6 @@
 
           disable_ligatures = "always";
           font_features = "MonocraftNerdFontComplete- -liga";
-
-          include = toString theme;
         };
       };
     };
