@@ -142,10 +142,11 @@
           smart_resizing = false;
         };
 
-        gestures = {
-          workspace_swipe = true;
-          workspace_swipe_forever = true;
-        };
+        gesture = [
+          "3, horizontal, workspace"
+        ];
+
+        gestures.workspace_swipe_forever = true;
       };
     };
   };
