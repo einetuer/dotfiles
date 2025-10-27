@@ -276,6 +276,14 @@
             "browser.newtabpage.activity-stream.feeds.topsites" = false;
               
             "browser.newtabpage.activity-stream.newtabWallpapers.wallpaper" = "dark-panda";
+
+            "browser.ml.linkPreview.enabled" = false;
+            "browser.ml.chat.enabled" = false;
+            "browser.ml.enable" = false;
+            "browser.tabs.groups.smart.enabled" = false;
+            "browser.tabs.groups.smart.userEnabled" = false;
+            "extensions.ml.enabled" = false;
+            "sidebar.revamp" = false;
           };
         };
 

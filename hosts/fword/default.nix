@@ -46,6 +46,7 @@
         "docker"
         "libvirtd"
         "ydotool"
+        "dialout"
       ];
       hashedPasswordFile = config.sops.secrets.fword-arthur.path;
     };
