@@ -151,11 +151,9 @@
                   (folder "uni" [
                     (defineNamed "ilias" "ilias.hhu.de/login.php?client_id=UniRZ&cmd=force_login&lang=de")
                     (defineNamed "lsf" "lsf.hhu.de")
-                    (defineNamed "fscs" "fscs.hhu.de")
                     (defineNamed "phynix nextcloud" "nextcloud.phynix-hhu.de")
-                    (defineNamed "mete" "metesecure.hhu-fscs.de")
                     (defineNamed "tickets" "tickets.astahhu.de/mailbox/4")
-                    (defineNamed "propra2" "github.com/hhu-propra2-ws24/Organisation")
+                    (defineNamed "propra2" "github.com/hhu-propra2-ws25/Organisation")
                     (defineNamed "sysprog" "coconucos.cs.uni-duesseldorf.de/lehre/home/lectures/bsusp/overview/")
                     (defineNamed "sciebo" "uni-duesseldorf.sciebo.de/")
                     (defineNamed "ordnungen" "hhu-ordnungen.github.io/ordnungen/")
@@ -211,9 +209,6 @@
                 "Github" =
                   define "gh" "github.com/search?q={searchTerms}&type=repositories"
                     "github.com/favicon.ico";
-                "Instant Gaming" =
-                  define "ig" "www.instant-gaming.com/en/search/?q={searchTerms}"
-                    "www.instant-gaming.com/favicon.ico";
                 "ProtonDB" =
                   define "protondb" "www.protondb.com/search?q={searchTerms}"
                     "www.protondb.com/favicon.ico";
