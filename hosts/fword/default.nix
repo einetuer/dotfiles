@@ -93,6 +93,8 @@
     YDOTOOL_SOCKET = "/run/ydotoold/socket";
   };
 
+  programs.yubikey-touch-detector.enable = true;
+
   networking.hostName = "fword";
 
   system.stateVersion = "24.11";
