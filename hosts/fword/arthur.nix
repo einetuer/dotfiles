@@ -10,6 +10,7 @@
 
     ../share/common-home.nix
     ./mute-eduroam.nix
+    ./distrobox.nix
   ];
 
   xfaf.desktop.river.enable = true;
@@ -80,6 +81,7 @@
   home.packages = with pkgs; [
     chromium
     element-desktop
+    jetbrains.idea-ultimate
     libreoffice
     prismlauncher
     pwvucontrol

@@ -96,6 +96,12 @@
   programs.yubikey-touch-detector.enable = true;
 
   networking.hostName = "fword";
+  
+  virtualisation.podman = {
+    enable = true;
+    dockerCompat = true;
+    autoPrune.enable = true;
+  };
 
   system.stateVersion = "24.11";
 }
