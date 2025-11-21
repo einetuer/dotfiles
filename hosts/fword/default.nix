@@ -103,5 +103,10 @@
     autoPrune.enable = true;
   };
 
+  networking.dhcpcd.extraConfig = ''
+    interface enp0s13f0u4u3u2 
+    nogateway
+  '';
+
   system.stateVersion = "24.11";
 }
