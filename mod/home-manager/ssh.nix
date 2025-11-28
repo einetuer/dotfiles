@@ -19,10 +19,7 @@
         verleihnix.hostname = "verleihnix.hhu-fscs.de";
         sebigbos.hostname = "sebigbos.hhu-fscs.de";
 
-        vps = {
-          hostname = "0x5a4.de";
-          forwardAgent = true;
-        };
+        vps.hostname = "vps.tuer.wtf";
 
         "*" = {
           addKeysToAgent = "yes";

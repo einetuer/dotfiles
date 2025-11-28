@@ -49,7 +49,7 @@
 
         settings = {
           user = {
-            name = "0x5a4";
+            name = "einetuer";
             email = "1444@wienstroer.net";
           };
           
