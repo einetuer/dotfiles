@@ -10,6 +10,7 @@
     ./hardware-configuration.nix
     ../share/common.nix
     ../share/wifi.nix
+    ./wireguard.nix
 
     inputs.hardware.nixosModules.framework-13th-gen-intel
     outputs.nixosModules.xfaf

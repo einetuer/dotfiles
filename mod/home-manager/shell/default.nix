@@ -42,6 +42,7 @@
         feh
         file
         imagemagick
+        inetutils
         jq
         man-pages-posix
         mdcat
