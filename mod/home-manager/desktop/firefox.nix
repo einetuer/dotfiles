@@ -94,7 +94,7 @@
               "https://inphima.de"
               "https://phynix-hhu.de"
               "https://tech.lgbt"
-              "https://wienstroer.net"
+              "https://tuer.wtf"
               "https://youtube.com"
             ];
             "Behaviour" = "reject";
