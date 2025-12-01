@@ -1,5 +1,8 @@
 # 1444's dotfiles
 
+> [!IMPORTANT]
+> This repository has been migrated to [codeberg](https://codeberg.org/einetuer/dotfiles)
+
 Welcome to my home! This is my nixos configuration, most notably including:
 
 - river
